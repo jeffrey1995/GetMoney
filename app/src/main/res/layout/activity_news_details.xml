@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.zhuanfa.money.getmoney.activity.News_DetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/action_bar_background">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/back_btn_width"
+            android:layout_height="@dimen/back_btn_height"
+            android:layout_marginLeft="@dimen/back_btn_padding"
+            android:layout_centerVertical="true"
+            android:background="@drawable/navigationbar_btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/forward_title"
+            android:textColor="@color/action_title"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/forward_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:text="@string/forward_btn"
+        android:textColor="@android:color/white" />
+
+    <WebView
+        android:id="@+id/news_details_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/forward_btn"
+        android:layout_below="@id/title_rl" />
+</RelativeLayout>

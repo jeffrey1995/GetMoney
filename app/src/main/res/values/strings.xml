@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">转发赚钱</string>
+
+    <!--LoginActivity-->
+    <string name="login_qq">QQ登录</string>
+
+    <!--MineFragment-->
+    <string name="forward_title">转发任务</string>
+    <string name="invitation_title">邀请好友</string>
+    <string name="mine_title">我的帐号</string>
+    <string name="forward_tv">转发</string>
+    <string name="invitation_tv">邀请</string>
+    <string name="mine_tv">我的</string>
+
+    <string name="invitation_friends">好友数:</string>
+    <string name="friends_money">好友提成:</string>
+    <string name="remain_money">余额:</string>
+    <string name="get_money20">提现20元</string>
+    <string name="get_money50">提现50元</string>
+    <string name="get_money100">提现100元</string>
+    <string name="get_money_expain_text">\n
+        1.最低满20可提现.\n
+        2.提现手段仅限支付宝,需实名认证.\n
+        3.所有疑问,请点击右上角的按钮进行反馈.\n
+        4.本活动最终解释权归《转发赚钱》官方所有。
+    </string>
+
+    <!--Income_Details-->
+    <string name="income_title">收入详情</string>
+    <string name="income_remain">余额</string>
+    <string name="income_today">今日收入</string>
+    <string name="income_total">总收入</string>
+
+
+    <!--InvitationFragment-->
+    <string name="share_wx_friend">邀请微信好友</string>
+    <string name="share_wx_friend_circle">分享到微信朋友圈</string>
+    <string name="share_qq_friend">邀请QQ好友</string>
+    <string name="share_qq_zone">分享到QQ空间</string>
+    <string name="share_title">分享就可以赚钱,快来转发赚钱</string>
+
+    <!--Invatation_Rule_Activity-->
+    <string name="invitation_rule_title">邀请规则</string>
+    <string name="invatation_rule_text">\n
+        邀请好友安装《转发赚钱》，每邀请一个\n
+        即可获得3元奖励。并且此后永久享有好友\n
+        收入的20%提成！真的躺着也能赚钱！</string>
+
+    <!--NewsFragment-->
+    <string name="news_main_title">今日推荐美文</string>
+    <string name="news_main_forward_money">转发能赚0.8元</string>
+    <string name="ranking_title">邀请排行榜</string>
+    <string name="ranking_list">\n
+        NO.1  广东  澎湃小伙tt   220人\n
+        NO.2  广东  source_X    147人\n
+        NO.3  湖北  ━━℡赱綉℡     130人\n
+        NO.4  福建  凉玍。不悲伤  	119人\n
+        NO.5  广东  RAINBOWOW  	102人\n
+        NO.6  安徽  莫问夜归人    90人\n
+        NO.7  北京  盎然芬芳      87人\n
+        NO.8  辽宁  阿智          81人\n
+        NO.9  广东  紅颜 Ⅲ叠”     77人\n
+        NO.10 河南  H、小白云      75人
+    </string>
+
+    <!--ForwardDialog-->
+    <string name="forward_qzone">QQ空间</string>
+    <string name="forward_qq">QQ</string>
+    <string name="forward_getmoney">分享后即可赚钱!</string>
+    <string name="forward_cancel">取消</string>
+
+
+    <!--NewsFragment_list_item-->
+    <string name="news_item_title">优雅美文</string>
+    <string name="news_item_forward_money">转发能赚0.5元</string>
+
+    <!--News_DetailsActvity-->
+    <string name="forward_btn">转发赚钱</string>
+
+
+</resources>

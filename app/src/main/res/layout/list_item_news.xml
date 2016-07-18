@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/news_item_uri_img"
+        android:layout_width="@dimen/news_item_img_width"
+        android:layout_height="@dimen/news_item_img_height"
+        android:layout_marginTop="@dimen/news_item_padding"
+        android:layout_marginBottom="@dimen/news_item_forward_money_size"
+        android:layout_marginRight="@dimen/news_item_padding"/>
+    <RelativeLayout
+        android:id="@+id/news_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/news_item_uri_img">
+        <TextView
+            android:id="@+id/news_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/news_item_title"
+            android:textSize="@dimen/news_item_title"
+            android:layout_marginTop="@dimen/news_item_padding"
+            android:layout_marginLeft="@dimen/news_item_padding"/>
+        <TextView
+            android:id="@+id/news_item_forward_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/news_item_forward_money"
+            android:textSize="@dimen/news_item_forward_money_size"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/news_item_padding"
+            android:layout_marginRight="@dimen/news_item_padding"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

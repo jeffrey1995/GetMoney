@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jingchen.pulltorefresh.PullableListView
+            android:id="@+id/news_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:footerDividersEnabled="true"
+            android:overScrollMode="never" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

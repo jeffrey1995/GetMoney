@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/action_bar_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/action_title"
+            android:text="@string/invitation_title"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/invitation_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/invitation_img_height"
+        android:background="@mipmap/ic_launcher"/>
+
+    <Button
+        android:id="@+id/share_qq_friend_btn"
+        android:layout_width="@dimen/invitation_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/invitation_btn_top_padding"
+        android:text="@string/share_qq_friend" />
+
+    <Button
+        android:id="@+id/share_qq_zone_btn"
+        android:layout_width="@dimen/invitation_btn_width"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/invitation_btn_top_padding"
+        android:text="@string/share_qq_zone" />
+
+</LinearLayout>

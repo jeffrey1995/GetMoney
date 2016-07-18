@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuanfa.money.getmoney.activity.Income_DetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/action_bar_background">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/back_btn_width"
+            android:layout_height="@dimen/back_btn_height"
+            android:layout_marginLeft="@dimen/back_btn_padding"
+            android:layout_centerVertical="true"
+            android:background="@drawable/navigationbar_btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/income_title"
+            android:textColor="@color/action_title"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/income_remain_tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_rl"
+        android:layout_marginLeft="@dimen/income_text_padding"
+        android:layout_marginTop="@dimen/income_text_padding"
+        android:text="@string/income_remain"
+        android:textSize="@dimen/income_text_size" />
+
+    <TextView
+        android:id="@+id/income_remain_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title_rl"
+        android:layout_marginRight="@dimen/income_text_padding"
+        android:layout_marginTop="@dimen/income_text_padding"
+        android:text="0元"
+        android:textSize="@dimen/income_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/income_remain_tv_tag"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/income_today_tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/income_remain_tv_tag"
+        android:layout_marginLeft="@dimen/income_text_padding"
+        android:layout_marginTop="@dimen/income_text_padding"
+        android:text="@string/income_today"
+        android:textSize="@dimen/income_text_size" />
+
+    <TextView
+        android:id="@+id/income_today_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/income_remain_tv_tag"
+        android:layout_marginRight="@dimen/income_text_padding"
+        android:layout_marginTop="@dimen/income_text_padding"
+        android:text="0元"
+        android:textSize="@dimen/income_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/income_today_tv_tag"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/income_total_tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/income_today_tv_tag"
+        android:layout_marginLeft="@dimen/income_text_padding"
+        android:layout_marginTop="@dimen/income_text_padding"
+        android:text="@string/income_total"
+        android:textSize="@dimen/income_text_size" />
+
+    <TextView
+        android:id="@+id/income_total_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/income_today_tv_tag"
+        android:layout_marginRight="@dimen/income_text_padding"
+        android:layout_marginTop="@dimen/income_text_padding"
+        android:text="0元"
+        android:textSize="@dimen/income_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/income_total_tv_tag"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/income_total_tv"
+        android:layout_marginTop="@dimen/income_list_item_padding"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/income_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/income_total_tv"
+        android:layout_marginTop="@dimen/income_list_item_padding" />
+</RelativeLayout>

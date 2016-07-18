@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/main_foot_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/foot_tag_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/forward_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/forward_iv"
+                android:layout_width="@dimen/foot_tab_img_width"
+                android:layout_height="@dimen/foot_tab_img_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/foot_tab_img_top_padding"
+                android:background="@drawable/tab_btn_forward" />
+
+            <TextView
+                android:id="@+id/forward_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/foot_tab_tv_top_padding"
+                android:text="@string/forward_tv"
+                android:textSize="@dimen/foot_tab_tv_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/invitation_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/invitation_iv"
+                android:layout_width="@dimen/foot_tab_img_width"
+                android:layout_height="@dimen/foot_tab_img_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/foot_tab_img_top_padding"
+                android:background="@drawable/tab_btn_invite" />
+
+            <TextView
+                android:id="@+id/invitation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/foot_tab_tv_top_padding"
+                android:text="@string/invitation_tv"
+                android:textSize="@dimen/foot_tab_tv_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mine_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mine_iv"
+                android:layout_width="@dimen/foot_tab_img_width"
+                android:layout_height="@dimen/foot_tab_img_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/foot_tab_img_top_padding"
+                android:background="@drawable/tab_btn_me" />
+
+            <TextView
+                android:id="@+id/mine_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/foot_tab_tv_top_padding"
+                android:text="@string/mine_tv"
+                android:textSize="@dimen/foot_tab_tv_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_foot_ll"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>

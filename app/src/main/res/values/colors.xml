@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="theme">#01b806</color>
+    <color name="btn_disable">#30E545</color>
+    <color name="foot_tab_text">#666666</color>
+    <color name="foot_tab_text_pressed">#01b806</color>
+    <color name="action_bar_background">#1a1d29</color>
+    <color name="action_title">#ffffff</color>
+</resources>

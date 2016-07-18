@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url_host">http://114.215.239.59:8080</string>
+    <string name="news">/?c=</string>
+    <string name="qq_appId">1105456189</string>
+    <string name="wx_appId">wxbd8d9e9f2e348364</string>
+</resources>

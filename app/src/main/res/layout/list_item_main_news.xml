@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/news_main_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_main_height">
+
+        <TextView
+            android:id="@+id/forward_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/news_main_padding"
+            android:text="@string/news_main_forward_money"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/news_main_forward_money_size" />
+
+
+        <TextView
+            android:id="@+id/news_main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/news_main_padding"
+            android:layout_marginTop="@dimen/news_main_padding"
+            android:text="@string/news_main_title"
+            android:textSize="@dimen/news_main_title_size" />
+
+        <ImageView
+            android:id="@+id/news_main_uri_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/news_main_title_tv"
+            android:layout_above="@id/forward_money_tv"/>
+    </RelativeLayout>
+</LinearLayout>
