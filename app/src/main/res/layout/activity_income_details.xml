@@ -11,13 +11,18 @@
         android:layout_height="@dimen/top_bar_height"
         android:background="@color/action_bar_background">
 
-        <ImageView
-            android:id="@+id/back_btn"
-            android:layout_width="@dimen/back_btn_width"
-            android:layout_height="@dimen/back_btn_height"
-            android:layout_marginLeft="@dimen/back_btn_padding"
-            android:layout_centerVertical="true"
-            android:background="@drawable/navigationbar_btn_back" />
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/back_btn_width"
+                android:layout_height="@dimen/back_btn_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/back_btn_padding"
+                android:background="@drawable/navigationbar_btn_back" />
+        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"

@@ -2,6 +2,8 @@
 <resources>
     <string name="url_host">http://114.215.239.59:8080</string>
     <string name="news">/?c=</string>
+    <string name="app_logo">
+        http://bcs.img.r1.91.com/data/upload/2014/12_19/11/20141219113812_4321.png</string>
     <string name="qq_appId">1105456189</string>
     <string name="wx_appId">wxbd8d9e9f2e348364</string>
 </resources>

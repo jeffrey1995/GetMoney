@@ -14,15 +14,15 @@
 
     <string name="invitation_friends">好友数:</string>
     <string name="friends_money">好友提成:</string>
-    <string name="remain_money">余额:</string>
+    <string name="remain_money">余额</string>
     <string name="get_money20">提现20元</string>
     <string name="get_money50">提现50元</string>
     <string name="get_money100">提现100元</string>
     <string name="get_money_expain_text">\n
-        1.最低满20可提现.\n
-        2.提现手段仅限支付宝,需实名认证.\n
-        3.所有疑问,请点击右上角的按钮进行反馈.\n
-        4.本活动最终解释权归《转发赚钱》官方所有。
+        1.最低满20可提现\n
+        2.提现手段仅限支付宝,需实名认证\n
+        3.所有疑问,请点击右上角的按钮进行反馈\n
+        4.本活动最终解释权归《转发赚钱》官方所有
     </string>
 
     <!--Income_Details-->
@@ -31,6 +31,13 @@
     <string name="income_today">今日收入</string>
     <string name="income_total">总收入</string>
 
+    <!--Suggest-->
+    <string name="suggest_title">反馈</string>
+    <string name="my_suggest">我的意见:</string>
+    <string name="my_suggest_hint">请输入内容</string>
+    <string name="my_qq">我的QQ:</string>
+    <string name="my_qq_hint">请输入QQ号码</string>
+    <string name="suggset_commit_btn">提交</string>
 
     <!--InvitationFragment-->
     <string name="share_wx_friend">邀请微信好友</string>

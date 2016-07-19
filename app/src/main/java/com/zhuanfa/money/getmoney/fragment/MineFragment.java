@@ -10,12 +10,15 @@ import android.util.LruCache;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.zhuanfa.money.getmoney.MyApplication;
 import com.zhuanfa.money.getmoney.R;
 import com.zhuanfa.money.getmoney.activity.Income_DetailsActivity;
+import com.zhuanfa.money.getmoney.activity.SuggestActivity;
 import com.zhuanfa.money.getmoney.entity.ForwardHistory;
 import com.zhuanfa.money.getmoney.db.MyDBManager;
 import com.zhuanfa.money.getmoney.share.ShareManager;
@@ -31,9 +34,12 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private View view;
     private ShareManager shareManager;
     private TextView qq_nickname;
-    private TextView remain_money_total_tv, remain_money_tv;
+    private TextView remain_money_total_tv;
+    private RelativeLayout remain_money_tv;
+    private ImageView suggest_iv;
     private RoundImageView qq_head_img;
     private double total_money;
+    private Intent intent;
 
     @Nullable
     @Override
@@ -67,8 +73,10 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         qq_nickname = (TextView) view.findViewById(R.id.qq_nickname);
         remain_money_total_tv = (TextView) view.findViewById(R.id.remain_money_total_tv);
         qq_head_img = (RoundImageView) view.findViewById(R.id.qq_head_img);
-        remain_money_tv = (TextView) view.findViewById(R.id.remain_money_tv);
+        remain_money_tv = (RelativeLayout) view.findViewById(R.id.remain_money_rl);
+        suggest_iv = (ImageView) view.findViewById(R.id.suggest_iv);
         remain_money_tv.setOnClickListener(this);
+        suggest_iv.setOnClickListener(this);
         qq_nickname.setText(shareManager.getNickname());
         netWorkImageViewVolley(shareManager.getHead_img(), qq_head_img);
     }
@@ -100,10 +108,13 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.remain_money_tv:
-                Intent intent = new Intent(getActivity(), Income_DetailsActivity.class);
+            case R.id.remain_money_rl:
+                intent = new Intent(getActivity(), Income_DetailsActivity.class);
                 getActivity().startActivity(intent);
                 break;
+            case R.id.suggest_iv:
+                intent = new Intent(getActivity(), SuggestActivity.class);
+                getActivity().startActivity(intent);
         }
     }
 }

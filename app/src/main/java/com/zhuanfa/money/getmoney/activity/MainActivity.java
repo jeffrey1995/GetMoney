@@ -1,23 +1,25 @@
 package com.zhuanfa.money.getmoney.activity;
 
-import android.annotation.TargetApi;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.res.Resources;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.zhuanfa.money.getmoney.R;
 import com.zhuanfa.money.getmoney.fragment.ForwardFragment;
 import com.zhuanfa.money.getmoney.fragment.InvitationFragment;
 import com.zhuanfa.money.getmoney.fragment.MineFragment;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private LinearLayout forward_ll, invitation_ll, mine_ll;
@@ -28,6 +30,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public static int FORWARD_PRESSED = 0;
     public static int INVITATION_PRESSED = 1;
     public static int MINE_PRESSED = 2;
+    private static Boolean isExit = false;// 回退两次退出应用
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +57,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     /**
      * 切换fragment
+     *
      * @param from
      * @param to
      */
@@ -109,6 +113,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     /**
      * 更改主页底部Tab样式
+     *
      * @param index
      */
     private void changeTabStyle(int index) {
@@ -148,6 +153,40 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         } else {
             mine_iv.setImageResource(R.drawable.tab_btn_me);
             mine_tv.setTextColor(rs.getColor(R.color.foot_tab_text));
+        }
+    }
+
+    /**
+     * 点击两次退出应用
+     *
+     * @param keyCode
+     * @param event
+     * @return
+     */
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // TODO Auto-generated method stub
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exitBy2Click();
+        }
+        return false;
+    }
+
+    private void exitBy2Click() {
+        // TODO Auto-generated method stub
+        Timer tExit = null;
+        if (isExit == false) {
+            isExit = true; // 准备退出
+            Toast.makeText(this, "再按一次退出应用", Toast.LENGTH_SHORT).show();
+            tExit = new Timer();
+            tExit.schedule(new TimerTask() {
+                public void run() {
+                    isExit = false; // 取消退出
+                }
+            }, 1500); // 如果2秒钟内没有按下返回键，则启动定时器取消掉刚才执行的任务
+
+        } else {
+            finish();
+            System.exit(0);
         }
     }
 }

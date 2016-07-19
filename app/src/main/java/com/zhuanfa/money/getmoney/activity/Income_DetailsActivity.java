@@ -2,9 +2,9 @@ package com.zhuanfa.money.getmoney.activity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zhuanfa.money.getmoney.R;
@@ -20,7 +20,7 @@ import java.util.List;
 
 public class Income_DetailsActivity extends BaseActivity implements View.OnClickListener{
     private TextView income_remain_tv, income_today_tv, income_total_tv;
-    private ImageView back_btn;
+    private RelativeLayout back_rl;
     private ListView listview;
     private List<ForwardHistory> fh_list;
     private double income_remain=-1;
@@ -38,9 +38,9 @@ public class Income_DetailsActivity extends BaseActivity implements View.OnClick
         income_remain_tv = (TextView) findViewById(R.id.income_remain_tv);
         income_today_tv = (TextView) findViewById(R.id.income_today_tv);
         income_total_tv = (TextView) findViewById(R.id.income_total_tv);
-        back_btn = (ImageView) findViewById(R.id.back_btn);
+        back_rl = (RelativeLayout) findViewById(R.id.back_rl);
         listview = (ListView) findViewById(R.id.income_list);
-        back_btn.setOnClickListener(this);
+        back_rl.setOnClickListener(this);
         IncomeAdapter adapter = new IncomeAdapter(this,R.layout.list_item_income, fh_list);
         listview.setAdapter(adapter);
         income_remain_tv.setText(String.format("%.2f",income_remain) + "元");
@@ -82,7 +82,7 @@ public class Income_DetailsActivity extends BaseActivity implements View.OnClick
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.back_btn:
+            case R.id.back_rl:
                 finish();
                 break;
         }

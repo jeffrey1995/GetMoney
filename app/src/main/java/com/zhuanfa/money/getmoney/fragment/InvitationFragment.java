@@ -116,16 +116,16 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
         params.putString(QQShare.SHARE_TO_QQ_TITLE, getString(R.string.share_title));   //设置分享标题
         ArrayList<String> list = new ArrayList<String>();
 
-        params.putString(QQShare.SHARE_TO_QQ_TARGET_URL, "http://www.baidu.com"); //设置分享点击链接
+        params.putString(QQShare.SHARE_TO_QQ_TARGET_URL, getString(R.string.app_logo)); //设置分享点击链接
         params.putString(QQShare.SHARE_TO_QQ_SUMMARY, "转发就可以赚钱,就在转发赚钱!"); //设置分享概要说明
         params.putString(QQShare.SHARE_TO_QQ_APP_NAME, "转发赚钱"); //设置分享来源
 
         if (type == SHARE_QQ_FRIENDS) {
-            params.putString(QQShare.SHARE_TO_QQ_IMAGE_URL, shareManager.getHead_img()); //设置分享图片
+            params.putString(QQShare.SHARE_TO_QQ_IMAGE_URL, getString(R.string.app_logo)); //设置分享图片
             mTencent.shareToQQ(this.getActivity(), params, listener);
         }
         else if (type == SHARE_QQ_ZONE) {
-            list.add(shareManager.getHead_img());
+            list.add(getString(R.string.app_logo));
             params.putStringArrayList(QQShare.SHARE_TO_QQ_IMAGE_URL, list); //设置分享图片
             mTencent.shareToQzone(this.getActivity(), params, listener);
         }

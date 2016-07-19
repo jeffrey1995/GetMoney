@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/top_bar_height_mine"
-        android:background="@android:color/holo_blue_bright">
+        android:background="@color/black">
 
         <TextView
             android:layout_width="wrap_content"
@@ -15,6 +15,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/mine_title_top_padding"
             android:text="@string/mine_title"
+            android:textColor="@color/white"
             android:textSize="@dimen/title_size" />
 
         <com.zhuanfa.money.getmoney.user_defined_widget.RoundImageView
@@ -32,69 +33,106 @@
             android:layout_below="@id/qq_head_img"
             android:layout_marginTop="@dimen/mine_nickname_top_padding"
             android:text="昵称"
+            android:textColor="@color/white"
             android:textSize="@dimen/mine_nickname_text_size" />
-
-        <TextView
-            android:id="@+id/remain_money_tv"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/remain_money_rl"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@id/qq_head_img"
-            android:layout_marginRight="@dimen/mine_head_img_left_padding"
-            android:text="@string/remain_money"
-            android:textSize="@dimen/remain_money" />
+            android:layout_alignTop="@id/qq_head_img">
+            <TextView
+                android:id="@+id/remain_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/remain_money_right_margin"
+                android:text="@string/remain_money"
+                android:textColor="@color/white"
+                android:textSize="@dimen/remain_money" />
+
+            <TextView
+                android:id="@+id/remain_money_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/remain_money_tv"
+                android:layout_below="@id/remain_money_tv"
+                android:text="3元"
+                android:textColor="@color/white"
+                android:textSize="@dimen/remain_money" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@id/remain_money_tv"
+                android:background="@drawable/me_btn_next" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/suggest_iv"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mine_title_top_padding"
+            android:layout_marginTop="@dimen/mine_title_top_padding"
+            android:background="@drawable/me_btn_suggest" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/remain_money_total_tv"
-            android:layout_width="wrap_content"
+            android:id="@+id/invitation_friends_iv"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/remain_money_tv"
-            android:layout_below="@id/remain_money_tv"
-            android:text="3元"
-            android:textSize="@dimen/remain_money" />
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/friends_number_margin_left"
+            android:text="@string/invitation_friends"
+            android:textSize="@dimen/invitation_friends_text_size" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/invitation_friends_number_iv"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:layout_weight="0.5"
+            android:text="0个"
+            android:textSize="@dimen/invitation_friends_text_size" />
 
-            <TextView
-                android:id="@+id/invitation_friends_iv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/mine_head_img_left_padding"
-                android:layout_weight="1"
-                android:text="@string/invitation_friends"
-                android:textSize="@dimen/invitation_friends_text_size" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            />
 
-            <TextView
-                android:id="@+id/invitation_friends_number_iv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="0个"
-                android:textSize="@dimen/invitation_friends_text_size" />
+        <TextView
+            android:id="@+id/friends_money_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/friends_number_margin_left"
+            android:text="@string/friends_money"
+            android:textSize="@dimen/invitation_friends_text_size" />
 
-            <TextView
-                android:id="@+id/friends_money_iv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/mine_head_img_left_padding"
-                android:layout_weight="1"
-                android:text="@string/friends_money"
-                android:textSize="@dimen/invitation_friends_text_size" />
+        <TextView
+            android:id="@+id/friends_money_total_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="0元"
+            android:textSize="@dimen/invitation_friends_text_size" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/friends_money_total_iv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="0元"
-                android:textSize="@dimen/invitation_friends_text_size" />
-        </LinearLayout>
-
-    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -106,52 +144,47 @@
             android:orientation="vertical">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/get_money_btn_width"
+                android:layout_height="@dimen/get_money_btn_height"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/get_money_top_padding"
+                android:drawableLeft="@drawable/me_icon_alipay"
+                android:enabled="false"
                 android:text="@string/get_money20"
                 android:textSize="@dimen/get_money" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/get_money_btn_width"
+                android:layout_height="@dimen/get_money_btn_height"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/get_money_top_padding"
+                android:drawableLeft="@drawable/me_icon_alipay"
+                android:enabled="false"
                 android:text="@string/get_money50"
                 android:textSize="@dimen/get_money" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/get_money_btn_width"
+                android:layout_height="@dimen/get_money_btn_height"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/get_money_top_padding"
+                android:drawableLeft="@drawable/me_icon_alipay"
+                android:enabled="false"
                 android:text="@string/get_money100"
                 android:textSize="@dimen/get_money" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="提现说明"
+                android:text="提现说明:"
                 android:textSize="@dimen/get_money_explain_title" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@android:color/darker_gray" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/get_money_expain_text"
                 android:layout_gravity="center_horizontal"
-                android:textSize="@dimen/get_money_explain_text"/>
+                android:text="@string/get_money_expain_text"
+                android:textSize="@dimen/get_money_explain_text" />
         </LinearLayout>
 
     </ScrollView>

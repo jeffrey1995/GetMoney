@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.tencent.connect.share.QQShare;
@@ -39,7 +40,7 @@ public class News_DetailsActivity extends BaseActivity implements OnClickListene
     private Tencent mTencent;
     private IUiListener listener;
     private IWXAPI wx_api;
-    private ImageView back_btn;
+    private RelativeLayout back_rl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,8 +103,8 @@ public class News_DetailsActivity extends BaseActivity implements OnClickListene
         String link = getIntent().getStringExtra("link");
         news_details_wv.loadUrl(link);
 
-        back_btn = (ImageView) findViewById(R.id.back_btn);
-        back_btn.setOnClickListener(this);
+        back_rl = (RelativeLayout) findViewById(R.id.back_rl);
+        back_rl.setOnClickListener(this);
         //转发赚钱功能
         forward_btn = (Button) findViewById(R.id.forward_btn);
         forward_btn.setOnClickListener(this);
@@ -182,7 +183,7 @@ public class News_DetailsActivity extends BaseActivity implements OnClickListene
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.back_btn:
+            case R.id.back_rl:
                 finish();
                 break;
             case R.id.forward_btn:

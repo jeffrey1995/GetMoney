@@ -21,7 +21,8 @@
     <ImageView
         android:id="@+id/invitation_iv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/invitation_img_height" />
+        android:layout_height="@dimen/invitation_img_height"
+        android:background="@drawable/images"/>
 
     <RelativeLayout
         android:id="@+id/share_qq_friend_rl"
