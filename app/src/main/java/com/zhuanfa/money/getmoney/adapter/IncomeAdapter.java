@@ -1,6 +1,7 @@
 package com.zhuanfa.money.getmoney.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,7 @@ public class IncomeAdapter extends ArrayAdapter<ForwardHistory> {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
+        Log.d("Income :",forwardHistory.getType()+"");
         if (forwardHistory.getType() == ForwardHistory.TYPE_NEWS_TASK) {
             viewHolder.income_list_item_title_tv.setText("[转发佣金]" + forwardHistory.getTitle());
         }

@@ -38,6 +38,7 @@ public class MyDBManager {
                 cv.put("news_id",fh.getNews_id());
                 cv.put("title",fh.getTitle());
                 cv.put("forward_money",fh.getForward_money());
+                cv.put("type",fh.getType());
                 cv.put("date",fh.getDate());
                 db.insert("forward_history",null,cv);
             }
@@ -62,6 +63,7 @@ public class MyDBManager {
             forwardHistory.setNews_id(c.getString(c.getColumnIndex("news_id")));
             forwardHistory.setTitle(c.getString(c.getColumnIndex("title")));
             forwardHistory.setForward_money(c.getString(c.getColumnIndex("forward_money")));
+            forwardHistory.setType(c.getInt(c.getColumnIndex("type")));
             forwardHistory.setDate(c.getString(c.getColumnIndex("date")));
             history_list.add(forwardHistory);
         }

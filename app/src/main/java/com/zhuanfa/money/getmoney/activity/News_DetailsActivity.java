@@ -207,6 +207,7 @@ public class News_DetailsActivity extends BaseActivity implements OnClickListene
                 lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
                 forwardDialog.getWindow().setGravity(Gravity.BOTTOM);
+
                 forwardDialog.show();
                 break;
         }

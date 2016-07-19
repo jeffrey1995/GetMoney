@@ -3,7 +3,6 @@ package com.zhuanfa.money.getmoney.activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 
@@ -15,11 +14,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhuanfa.money.getmoney.R;
+import com.zhuanfa.money.getmoney.db.MyDBManager;
+import com.zhuanfa.money.getmoney.entity.ForwardHistory;
 import com.zhuanfa.money.getmoney.fragment.ForwardFragment;
 import com.zhuanfa.money.getmoney.fragment.InvitationFragment;
 import com.zhuanfa.money.getmoney.fragment.MineFragment;
-import com.zhuanfa.money.getmoney.service.PushService;
+import com.zhuanfa.money.getmoney.share.ShareManager;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -40,6 +45,29 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
         findView();
         getFragment();
+        getAward();
+    }
+
+    /**
+     * 获取新手奖励
+     */
+    private void getAward() {
+        ShareManager shareManager = new ShareManager(this);
+        if (shareManager.getIsNewPeople()) {
+            MyDBManager myDBManager = new MyDBManager(this);
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+            String date = df.format(new Date());    //获取系统时间
+            List<ForwardHistory> list = new ArrayList<ForwardHistory>();
+            ForwardHistory forwardHistory = new ForwardHistory("0", "100",
+                    "完成了新手任务",
+                    3.00 + "",
+                    ForwardHistory.TYPE_NEW_PEOPLE_TASK,
+                    date);
+            list.add(forwardHistory);
+            myDBManager.add(list);
+            Toast.makeText(this, "完成新手任务!", Toast.LENGTH_SHORT).show();
+            shareManager.setIsNewPople(false);
+        }
     }
 
     /**

@@ -6,6 +6,7 @@ package com.zhuanfa.money.getmoney.share;
 public class ShareContents {
     public static String ShareName = "User_Info";
 
+    public static String isNewPeople = "is_new_people";
     //QQ互联相关参数
     public static String openId = "openid";
     public static String access_token = "access_token";

@@ -20,7 +20,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS forward_history" +
-                "(_id INTEGER PRIMARY KEY AUTOINCREMENT,news_id VARCHAR,title VARCHAR, forward_money VARCHAR, date VARCHAR)");
+                "(_id INTEGER PRIMARY KEY AUTOINCREMENT,news_id VARCHAR,title VARCHAR, forward_money VARCHAR,type INTEGER, date VARCHAR)");
     }
 
     //如果DATABASE_VERSION值被改为2,系统发现现有数据库版本不同,即会调用onUpgrade
