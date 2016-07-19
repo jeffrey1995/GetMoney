@@ -2,81 +2,81 @@
 <items version="2" >
 
     <item
-        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/GetMoney/pullToRefreshlibrary/unspecified/jars/libs/gif.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="6481753f71da90aa89ee22231dd59016bce7a19d">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/8/gif_4aadc4a993c8f23334a442bd546fc3f41185352e/classes.dex" />
-    </item>
-    <item
-        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-21.0.3_3b5e8e1195c4c1f471227d955335d23b0aea6deb/classes.dex" />
-    </item>
-    <item
-        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="da188d71bc64b87f4a4748d503fc8cbb1cedc5b1">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f6cf67c9c916f13cc2901e32e9469f0056caff2c/classes.dex" />
-    </item>
-    <item
-        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="0507d15ab86fad94c3b7250d99b4c4bfd8d379c4">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_48abbbfa4da2b488c485e4ba6665fca36999f678/classes.dex" />
-    </item>
-    <item
         jar="/Users/tianxiying/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_60c8be21eeb63f1cb149ebed6f7fc07c107e596f/classes.dex" />
-    </item>
-    <item
-        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.3_a9571bb62ce609d500bcc0ae664800387621b225/classes.dex" />
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/gson-2.7_60c8be21eeb63f1cb149ebed6f7fc07c107e596f.jar" />
     </item>
     <item
         jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/libs/open_sdk_r5509_lite.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="84c7cf027dfd4517eb51d5898999a7f2f74f99cc">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/2/open_sdk_r5509_lite_b39a52e4dfe00ed0d1df234e4b913b3cdf7537cc/classes.dex" />
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/open_sdk_r5509_lite_b39a52e4dfe00ed0d1df234e4b913b3cdf7537cc.jar" />
+    </item>
+    <item
+        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-21.0.3_a9571bb62ce609d500bcc0ae664800387621b225.jar" />
     </item>
     <item
         jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.3_9f2998e9b6f9cf0b04c83fd8d394b2ce0654c14d/classes.dex" />
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3_9f2998e9b6f9cf0b04c83fd8d394b2ce0654c14d.jar" />
+    </item>
+    <item
+        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/GetMoney/pullToRefreshlibrary/unspecified/jars/libs/gif.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6481753f71da90aa89ee22231dd59016bce7a19d">
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/gif_4aadc4a993c8f23334a442bd546fc3f41185352e.jar" />
     </item>
     <item
         jar="/Users/tianxiying/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.3_4fc257d9da43fcdb233c25fa6e102bf90ccd6c35/classes.dex" />
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3_4fc257d9da43fcdb233c25fa6e102bf90ccd6c35.jar" />
+    </item>
+    <item
+        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-21.0.3_3b5e8e1195c4c1f471227d955335d23b0aea6deb.jar" />
     </item>
     <item
         jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/libs/libammsdk.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="11b09244aedaa51bfd09269637be7c32c60da314">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/2/libammsdk_3581817a4a9c02dbbd4724e4242c44e3cde4c79b/classes.dex" />
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/libammsdk_3581817a4a9c02dbbd4724e4242c44e3cde4c79b.jar" />
+    </item>
+    <item
+        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e18e744b3f388200440d10dc436907c64b43f5ec">
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_f6cf67c9c916f13cc2901e32e9469f0056caff2c.jar" />
     </item>
     <item
         jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/libs/volley-150320.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="bd06cb1c2c9ba96b73765b03ebd80d0ba759c346">
-        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/transforms/dex/debug/folders/1000/2/volley-150320_e919ad1fd3edcd90361a13956603dafda06175e2/classes.dex" />
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/volley-150320_e919ad1fd3edcd90361a13956603dafda06175e2.jar" />
+    </item>
+    <item
+        jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4026734400b3783da0e083782ee467386d8a8fe8">
+        <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/instant-run_48abbbfa4da2b488c485e4ba6665fca36999f678.jar" />
     </item>
 
 </items>

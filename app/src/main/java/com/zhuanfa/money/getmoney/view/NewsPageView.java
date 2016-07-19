@@ -3,6 +3,7 @@ package com.zhuanfa.money.getmoney.view;
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -64,7 +65,9 @@ public class NewsPageView {
         listview = (PullableListView) view.findViewById(R.id.news_list);
         refresh_rl = (PullToRefreshLayout) view.findViewById(R.id.refresh_rl);
         refresh_rl.setPullUpEnable(false);
-        myNewsAdapter = new MyNewsAdapter(view.getContext(), R.layout.list_item_news, newsList);
+        Display display = activity.getWindowManager().getDefaultDisplay();
+        int height = display.getHeight();
+        myNewsAdapter = new MyNewsAdapter(view.getContext(), R.layout.list_item_news, newsList, height);
         listview.setAdapter(myNewsAdapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -137,9 +140,13 @@ public class NewsPageView {
                         if (i < newsList.size()) {
                             MyNews myNews = (MyNews) newsList.get(i);
                             Intent intent = new Intent(view.getContext(), PushService.class);
-                            intent.putExtra("topic", myNews.getTitle());
-                            intent.putExtra("msg", myNews.getContent());
-                            intent.putExtra("img", myNews.getUri_img());
+                            intent.putExtra("news_id", myNews.getId());
+                            intent.putExtra("title", myNews.getTitle());
+                            intent.putExtra("content", myNews.getContent());
+                            intent.putExtra("forward_money", myNews.getForward_money() + "");
+                            intent.putExtra("data", myNews.getDate());
+                            intent.putExtra("uri_img", myNews.getUri_img());
+                            intent.putExtra("link", myNews.getLink());
                             intent.setAction(Intent.ACTION_EDIT);
                             view.getContext().startService(intent);
                         }

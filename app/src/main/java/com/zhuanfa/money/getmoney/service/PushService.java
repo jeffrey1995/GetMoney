@@ -13,6 +13,7 @@ import android.support.v4.app.TaskStackBuilder;
 
 import com.zhuanfa.money.getmoney.R;
 import com.zhuanfa.money.getmoney.activity.MainActivity;
+import com.zhuanfa.money.getmoney.activity.News_DetailsActivity;
 
 import java.util.Random;
 
@@ -44,8 +45,8 @@ public class PushService extends Service {
         super.onStart(intent, startId);
         //根据匹配类型处理
         if(intent.getAction().equals(Intent.ACTION_EDIT)){
-            topic=intent.getStringExtra("topic");
-            msg=intent.getStringExtra("msg");
+            topic=intent.getStringExtra("title");
+            msg=intent.getStringExtra("content");
         }
 
         //获取设置的提示音，用的是系统声音
@@ -60,9 +61,17 @@ public class PushService extends Service {
                 .setSound(alarmSound).setVibrate(new long[]{500,500,500,500}).setAutoCancel(true);
 
         //单击消息后连接打开的Avtivity
-        Intent reslutIntent=new Intent(getApplicationContext(),MainActivity.class);
+        Intent reslutIntent=new Intent(getApplicationContext(),News_DetailsActivity.class);
         reslutIntent.putExtra("topic", topic);
         reslutIntent.putExtra("msg", msg);
+
+        reslutIntent.putExtra("news_id", intent.getStringExtra("news_id"));
+        reslutIntent.putExtra("title",  topic);
+        reslutIntent.putExtra("content", msg);
+        reslutIntent.putExtra("forward_money", intent.getStringExtra("forward_money"));
+        reslutIntent.putExtra("data", intent.getStringExtra("date"));
+        reslutIntent.putExtra("uri_img", intent.getStringExtra("uri_img"));
+        reslutIntent.putExtra("link", intent.getStringExtra("link"));
 
         //添加动作到通知，当用户点击通知时，触发
         //在通知里面，这个动作通过PendingIntent来定义

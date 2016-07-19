@@ -6,6 +6,7 @@
         android:id="@+id/news_item_uri_img"
         android:layout_width="@dimen/news_item_img_width"
         android:layout_height="@dimen/news_item_img_height"
+        android:layout_centerVertical="true"
         android:layout_marginTop="@dimen/news_item_padding"
         android:layout_marginBottom="@dimen/news_item_forward_money_size"
         android:layout_marginRight="@dimen/news_item_padding"/>

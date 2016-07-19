@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.Log;
 import android.util.LruCache;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,18 +26,20 @@ import java.util.List;
 public class MyNewsAdapter extends ArrayAdapter<MyNews> {
     private final String TAG = "MyNewsAdapter";
     private int resourceId;
+    private int height;
 
     private final int TYPE_MAIN = 0;
     private final int TYPE_ITEM = 1;
 
-    public MyNewsAdapter(Context context, int resource, List<MyNews> newsList) {
+    public MyNewsAdapter(Context context, int resource, List<MyNews> newsList, int height) {
         super(context, resource, newsList);
-        resourceId = resource;
+        this.resourceId = resource;
+        this.height = height;
     }
 
     @Override
     public int getItemViewType(int position) {
-            return TYPE_ITEM;
+        return TYPE_ITEM;
     }
 
     @Override
@@ -71,7 +74,7 @@ public class MyNewsAdapter extends ArrayAdapter<MyNews> {
                     viewHolder_item = new ViewHolder_ITEM();
                     RelativeLayout rl_item = (RelativeLayout) convertView.findViewById(R.id.news_rl);
                     ViewGroup.LayoutParams relativeParams_item = (ViewGroup.LayoutParams) rl_item.getLayoutParams();
-                    relativeParams_item.height = 500 * 250 / 460;
+                    relativeParams_item.height = height / 7;
                     rl_item.setLayoutParams(relativeParams_item);
                     viewHolder_item.news_item_title_tv = (TextView) convertView.findViewById(R.id.news_item_title_tv);
                     viewHolder_item.news_item_forward_money_tv = (TextView) convertView.findViewById(R.id.news_item_forward_money_tv);

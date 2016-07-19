@@ -200,12 +200,9 @@ public class News_DetailsActivity extends BaseActivity implements OnClickListene
                 });
                 // 获取对话框的窗口，并设置窗口参数,让对话框从底部弹出
                 WindowManager.LayoutParams lp = forwardDialog.getWindow().getAttributes();
-                lp.dimAmount = 0.7f;
                 forwardDialog.getWindow().getDecorView().setPadding(0, 0, 0, 0);
-
                 lp.width = WindowManager.LayoutParams.MATCH_PARENT;
                 lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-
                 forwardDialog.getWindow().setGravity(Gravity.BOTTOM);
 
                 forwardDialog.show();
