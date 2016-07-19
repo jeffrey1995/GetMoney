@@ -21,8 +21,8 @@
 
     <!--Invitation_Fragment-->
     <dimen name="invitation_img_height">170dp</dimen>
-    <dimen name="invitation_btn_top_padding">50dp</dimen>
-    <dimen name="invitation_btn_width">200dp</dimen>
+    <dimen name="invitation_share_height">80dp</dimen>
+    <dimen name="invitation_margin">10dp</dimen>
 
     <!--Invitation_Rule-->
     <dimen name="rule_top_padding">10dp</dimen>

@@ -1,2 +1,1 @@
-include ':app', ':pullToRefresh', ':pullToRefreshlibrary'
-project(':pullToRefresh').projectDir = new File('pullToRefreshlibrary')
+include ':app', ':pullToRefreshlibrary'

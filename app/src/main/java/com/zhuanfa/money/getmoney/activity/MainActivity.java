@@ -37,7 +37,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         getFragment();
     }
 
-
+    /**
+     * 实例化fragment
+     */
     private void getFragment() {
         forwardFragment = new ForwardFragment();
         invitationFragment = new InvitationFragment();
@@ -50,6 +52,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         changeTabStyle(FORWARD_PRESSED);
     }
 
+    /**
+     * 切换fragment
+     * @param from
+     * @param to
+     */
     public void switchContent(Fragment from, Fragment to) {
         FragmentTransaction transaction = mFragmentManager.beginTransaction();
         if (currentFragment != to) {

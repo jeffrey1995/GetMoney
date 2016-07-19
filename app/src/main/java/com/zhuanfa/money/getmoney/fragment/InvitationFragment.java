@@ -8,8 +8,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.tencent.connect.share.QQShare;
 import com.tencent.tauth.IUiListener;
@@ -28,8 +28,8 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
     private final String TAG = "InvitationFragment";
     private View view;
     private ImageView invitation_iv;
-    private Button share_qq_friend_btn;
-    private Button share_qq_zone_btn;
+    private RelativeLayout share_qq_friend_rl;
+    private RelativeLayout share_qq_zone_rl;
 
     private Tencent mTencent;
     private IUiListener listener;
@@ -41,7 +41,8 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_invitation,null);
         shareManager = new ShareManager(this.getActivity());
-        findView();listener = new IUiListener() {
+        findView();
+        listener = new IUiListener() {
             @Override
             public void onComplete(Object o) {
                 Log.d(TAG, o.toString());
@@ -63,12 +64,12 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
 
     private void findView() {
         invitation_iv = (ImageView) view.findViewById(R.id.invitation_iv);
-        share_qq_friend_btn = (Button) view.findViewById(R.id.share_qq_friend_btn);
-        share_qq_zone_btn = (Button) view.findViewById(R.id.share_qq_zone_btn);
+        share_qq_friend_rl = (RelativeLayout) view.findViewById(R.id.share_qq_friend_rl);
+        share_qq_zone_rl = (RelativeLayout) view.findViewById(R.id.share_qq_zone_rl);
 
         invitation_iv.setOnClickListener(this);
-        share_qq_friend_btn.setOnClickListener(this);
-        share_qq_zone_btn.setOnClickListener(this);
+        share_qq_friend_rl.setOnClickListener(this);
+        share_qq_zone_rl.setOnClickListener(this);
     }
 
     @Override
@@ -78,10 +79,10 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
                 Intent intent = new Intent(this.getActivity(), InvitationRuleActivity.class);
                 this.getActivity().startActivity(intent);
                 break;
-            case R.id.share_qq_friend_btn:
+            case R.id.share_qq_friend_rl:
                 qq_share(SHARE_QQ_FRIENDS);
                 break;
-            case R.id.share_qq_zone_btn:
+            case R.id.share_qq_zone_rl:
                 qq_share(SHARE_QQ_ZONE);
                 break;
         }
