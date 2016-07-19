@@ -37,6 +37,13 @@
   <component name="FileEditorManager">
     <leaf />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
       <map>
@@ -2489,23 +2496,28 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/relative.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/relative_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_invitation.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/fragment/MineFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_news_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/InvitationRuleActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_invitation_rule.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_income_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_suggest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/Income_DetailsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/News_DetailsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/SuggestActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/config.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/fragment/InvitationFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_suggest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/WelcomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/zhuanfa/money/getmoney/ExampleUnitTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/service/PushService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/view/NewsPageView.java" />
       </list>
     </option>
   </component>
@@ -2584,24 +2596,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getmoney" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetMoney" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2657,54 +2651,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetMoney" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetMoney" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outputs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetMoney" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetMoney" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outputs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -2717,7 +2663,7 @@
     <property name="com.android.studio.selected.modules.on.import" value="GetMoney&#10;app&#10;pullToRefreshlibrary&#10;pullToRefresh" />
     <property name="android.project.structure.last.selected" value="pullToRefresh" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="device.picker.selection" value="a454d672" />
+    <property name="device.picker.selection" value="GUP7AEOF99999999" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Teacher" />
   </component>
   <component name="RecentsManager">
@@ -2733,6 +2679,32 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
+    <configuration default="false" name="ExampleUnitTest.random_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zhuanfa.money.getmoney.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="app" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.zhuanfa.money.getmoney" />
+      <option name="MAIN_CLASS_NAME" value="com.zhuanfa.money.getmoney.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="random_test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -2979,9 +2951,15 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleUnitTest.random_test" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ExampleUnitTest.random_test" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -3005,6 +2983,26 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ExampleUnitTest_random_test - 2016.07.19 at 16h 31m 19s.xml">
+      <configuration name="ExampleUnitTest.random_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleUnitTest_random_test - 2016.07.19 at 16h 31m 26s.xml">
+      <configuration name="ExampleUnitTest.random_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleUnitTest_random_test - 2016.07.19 at 16h 31m 54s.xml">
+      <configuration name="ExampleUnitTest.random_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleUnitTest_random_test - 2016.07.19 at 16h 32m 02s.xml">
+      <configuration name="ExampleUnitTest.random_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleUnitTest_random_test - 2016.07.19 at 16h 32m 08s.xml">
+      <configuration name="ExampleUnitTest.random_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleUnitTest_random_test - 2016.07.19 at 16h 35m 35s.xml">
+      <configuration name="ExampleUnitTest.random_test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="false" />
@@ -3015,16 +3013,16 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40528634" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24391988" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25107297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3107,18 +3105,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#482#505#0" expanded="true" />
-            <element signature="e#661#667#0" expanded="true" />
-            <element signature="e#702#716#0" expanded="true" />
-            <element signature="e#1276#1299#0" expanded="true" />
-            <element signature="e#1381#1400#0" expanded="true" />
-            <element signature="e#1588#1608#0" expanded="true" />
-            <element signature="e#1707#1734#0" expanded="true" />
-            <element signature="e#1995#2020#0" expanded="true" />
-            <element signature="e#3110#3125#0" expanded="true" />
-            <element signature="e#3224#3246#0" expanded="true" />
-            <element signature="e#3509#3529#0" expanded="true" />
-            <element signature="e#4847#4869#0" expanded="true" />
+            <element signature="e#528#551#0" expanded="true" />
+            <element signature="e#707#713#0" expanded="true" />
+            <element signature="e#748#762#0" expanded="true" />
+            <element signature="e#1322#1345#0" expanded="true" />
+            <element signature="e#1427#1446#0" expanded="true" />
+            <element signature="e#1634#1654#0" expanded="true" />
+            <element signature="e#1753#1780#0" expanded="true" />
+            <element signature="e#2041#2066#0" expanded="true" />
+            <element signature="e#3156#3171#0" expanded="true" />
+            <element signature="e#3270#3292#0" expanded="true" />
+            <element signature="e#3555#3575#0" expanded="true" />
+            <element signature="e#4893#4915#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3145,14 +3143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/fragment/ForwardFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-24/android.jar!/android/widget/EditText.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.648148">
@@ -3172,14 +3162,6 @@
             <element signature="e#2964#2965#0" expanded="true" />
             <element signature="e#3015#3016#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.935484">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3205,74 +3187,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/fragment/MineFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.548387">
           <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5833333">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <element signature="e#324#352#0" expanded="true" />
-            <element signature="e#600#631#0" expanded="true" />
-            <element signature="e#657#677#0" expanded="true" />
-            <element signature="e#752#771#0" expanded="true" />
-            <element signature="e#922#949#0" expanded="true" />
-            <element signature="e#984#1011#0" expanded="true" />
-            <element signature="e#1050#1085#0" expanded="true" />
-            <element signature="e#1123#1157#0" expanded="true" />
-            <element signature="e#1462#1496#0" expanded="true" />
-            <element signature="e#1601#1633#0" expanded="true" />
-            <element signature="e#2178#2212#0" expanded="true" />
-            <element signature="e#2242#2264#0" expanded="true" />
-            <element signature="e#2347#2368#0" expanded="true" />
-            <element signature="e#2794#2815#0" expanded="true" />
-            <element signature="e#3434#3465#0" expanded="true" />
-            <element signature="e#3503#3534#0" expanded="true" />
-            <element signature="e#4051#4086#0" expanded="true" />
-            <element signature="e#4112#4140#0" expanded="true" />
-            <element signature="e#4170#4207#0" expanded="true" />
-            <element signature="e#4476#4513#0" expanded="true" />
-            <element signature="e#4980#5015#0" expanded="true" />
-            <element signature="e#5041#5064#0" expanded="true" />
-            <element signature="e#5094#5131#0" expanded="true" />
-            <element signature="e#5394#5431#0" expanded="true" />
-            <element signature="e#5934#5962#0" expanded="true" />
-            <element signature="e#6001#6030#0" expanded="true" />
-            <element signature="e#6131#6161#0" expanded="true" />
-            <element signature="e#6295#6316#0" expanded="true" />
-            <element signature="e#6350#6368#0" expanded="true" />
-            <element signature="e#6430#6458#0" expanded="true" />
-            <element signature="e#6497#6526#0" expanded="true" />
-            <element signature="e#6627#6657#0" expanded="true" />
-            <element signature="e#6791#6812#0" expanded="true" />
-            <element signature="e#6846#6864#0" expanded="true" />
-            <element signature="e#6926#6954#0" expanded="true" />
-            <element signature="e#6993#7022#0" expanded="true" />
-            <element signature="e#7123#7153#0" expanded="true" />
-            <element signature="e#7287#7309#0" expanded="true" />
-            <element signature="e#7343#7361#0" expanded="true" />
-            <element signature="e#7563#7595#0" expanded="true" />
-            <element signature="e#7815#7846#0" expanded="true" />
-            <element signature="e#7880#7911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_news_details.xml">
@@ -3367,39 +3287,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_suggest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22493225">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="e#482#505#0" expanded="true" />
-            <element signature="e#779#802#0" expanded="true" />
-            <element signature="e#841#865#0" expanded="true" />
-            <element signature="e#961#986#0" expanded="true" />
-            <element signature="e#1276#1299#0" expanded="true" />
-            <element signature="e#1381#1400#0" expanded="true" />
-            <element signature="e#1588#1608#0" expanded="true" />
-            <element signature="e#1707#1734#0" expanded="true" />
-            <element signature="e#1995#2020#0" expanded="true" />
-            <element signature="e#3110#3125#0" expanded="true" />
-            <element signature="e#3224#3246#0" expanded="true" />
-            <element signature="e#3509#3529#0" expanded="true" />
-            <element signature="e#4792#4820#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/Income_DetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3437,22 +3324,118 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="118" column="85" selection-start-line="118" selection-start-column="85" selection-end-line="118" selection-end-column="85" />
           <folding>
-            <element signature="e#3307#3340#0" expanded="true" />
-            <element signature="e#3805#3836#0" expanded="true" />
-            <element signature="e#3966#3994#0" expanded="true" />
-            <element signature="e#4267#4295#0" expanded="true" />
-            <element signature="e#4450#4478#0" expanded="true" />
+            <element signature="e#3307#3340#0" expanded="false" />
+            <element signature="e#3805#3836#0" expanded="false" />
+            <element signature="e#3966#3994#0" expanded="false" />
+            <element signature="e#4267#4295#0" expanded="false" />
+            <element signature="e#4450#4478#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_suggest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8333334">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5166667">
+          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/WelcomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/fragment/MineFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/zhuanfa/money/getmoney/ExampleUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15649867">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/fragment/ForwardFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/service/PushService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23342176">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.16129">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding>
+            <element signature="e#832#850#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
-            <element signature="e#6172#6301#0" expanded="true" />
-            <element signature="e#6300#6301#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5686#5687#0" expanded="true" />
+            <element signature="e#5719#5720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhuanfa/money/getmoney/view/NewsPageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.8938994">
+          <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+          <folding>
+            <element signature="e#4682#5700#0" expanded="true" />
+            <element signature="e#5699#5700#0" expanded="true" />
+            <element signature="e#6126#6163#0" expanded="true" />
+            <element signature="e#6166#6199#0" expanded="true" />
           </folding>
         </state>
       </provider>

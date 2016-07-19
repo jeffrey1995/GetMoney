@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
+
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -18,6 +19,8 @@ import com.zhuanfa.money.getmoney.R;
 import com.zhuanfa.money.getmoney.activity.News_DetailsActivity;
 import com.zhuanfa.money.getmoney.entity.MyNews;
 import com.zhuanfa.money.getmoney.adapter.MyNewsAdapter;
+import com.zhuanfa.money.getmoney.service.PushService;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -68,11 +71,11 @@ public class NewsPageView {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 MyNews myNews = (MyNews) newsList.get(position);
                 Intent intent = new Intent(activity, News_DetailsActivity.class);
-                intent.putExtra("news_id",myNews.getId());
-                intent.putExtra("title",myNews.getTitle());
-                intent.putExtra("forward_money",myNews.getForward_money()+"");
-                intent.putExtra("data",myNews.getDate());
-                intent.putExtra("uri_img",myNews.getUri_img());
+                intent.putExtra("news_id", myNews.getId());
+                intent.putExtra("title", myNews.getTitle());
+                intent.putExtra("forward_money", myNews.getForward_money() + "");
+                intent.putExtra("data", myNews.getDate());
+                intent.putExtra("uri_img", myNews.getUri_img());
                 intent.putExtra("link", myNews.getLink());
                 activity.startActivity(intent);
             }
@@ -109,6 +112,8 @@ public class NewsPageView {
             newsList.add(myNews);
         }
         myNewsAdapter.notifyDataSetChanged();
+        //开启随机推送!
+        starPullService();
     }
 
     private void stopRefreshing(int refreshResult) {
@@ -117,6 +122,35 @@ public class NewsPageView {
             isRefreshing = false;
         }
     }
+
+    /**
+     * 开启后台Service推送新闻
+     */
+    private void starPullService() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(30000); //延时30秒
+                    if ("0".equals(type)) {     //从首页里随机抽取一条新闻进行推送
+                        int i = (int) (Math.random() * 15);
+                        if (i < newsList.size()) {
+                            MyNews myNews = (MyNews) newsList.get(i);
+                            Intent intent = new Intent(view.getContext(), PushService.class);
+                            intent.putExtra("topic", myNews.getTitle());
+                            intent.putExtra("msg", myNews.getContent());
+                            intent.putExtra("img", myNews.getUri_img());
+                            intent.setAction(Intent.ACTION_EDIT);
+                            view.getContext().startService(intent);
+                        }
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
 
     /**
      * 刷新操作

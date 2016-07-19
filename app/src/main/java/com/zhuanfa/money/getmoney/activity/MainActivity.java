@@ -3,6 +3,7 @@ package com.zhuanfa.money.getmoney.activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 
@@ -17,6 +18,7 @@ import com.zhuanfa.money.getmoney.R;
 import com.zhuanfa.money.getmoney.fragment.ForwardFragment;
 import com.zhuanfa.money.getmoney.fragment.InvitationFragment;
 import com.zhuanfa.money.getmoney.fragment.MineFragment;
+import com.zhuanfa.money.getmoney.service.PushService;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -154,6 +156,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             mine_iv.setImageResource(R.drawable.tab_btn_me);
             mine_tv.setTextColor(rs.getColor(R.color.foot_tab_text));
         }
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     /**

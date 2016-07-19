@@ -37,7 +37,7 @@
             android:textSize="@dimen/mine_nickname_text_size" />
         <RelativeLayout
             android:id="@+id/remain_money_rl"
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@id/qq_head_img">
@@ -55,7 +55,7 @@
                 android:id="@+id/remain_money_total_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/remain_money_tv"
+                android:layout_alignRight="@id/remain_money_tv"
                 android:layout_below="@id/remain_money_tv"
                 android:text="3元"
                 android:textColor="@color/white"

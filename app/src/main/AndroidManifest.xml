@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:name=".MyApplication"
@@ -40,6 +42,9 @@
             android:name=".activity.Income_DetailsActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".activity.SuggestActivity"
+            android:screenOrientation="portrait" />
         <!-- QQ互联的配置 -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -58,7 +63,8 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".activity.SuggestActivity"></activity>
+
+        <service android:name=".service.PushService" />
     </application>
 
 </manifest>
