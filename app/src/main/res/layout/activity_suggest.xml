@@ -96,6 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
+            android:inputType="number"
             android:hint="@string/my_qq_hint"
             android:maxLength="15"
             android:padding="10dp" />

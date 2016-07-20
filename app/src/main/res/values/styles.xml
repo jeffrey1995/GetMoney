@@ -1,6 +1,7 @@
 <resources xmlns:android="http://schemas.android.com/tools">
     <!--ForwardDialog-->
     <style name="forward_dialog" parent="android:Theme">
+        <item name="android:windowCloseOnTouchOutside">true</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowContentOverlay">@null</item>

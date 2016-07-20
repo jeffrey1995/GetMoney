@@ -3,6 +3,7 @@ package com.zhuanfa.money.getmoney.activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 
@@ -105,6 +106,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 transaction.commit();
             }
         }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        invitationFragment.onActivityResult(requestCode, resultCode, data);
     }
 
     private void findView() {

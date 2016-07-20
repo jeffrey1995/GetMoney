@@ -5,14 +5,15 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.util.LruCache;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.zhuanfa.money.getmoney.MyApplication;
@@ -22,7 +23,7 @@ import com.zhuanfa.money.getmoney.activity.SuggestActivity;
 import com.zhuanfa.money.getmoney.entity.ForwardHistory;
 import com.zhuanfa.money.getmoney.db.MyDBManager;
 import com.zhuanfa.money.getmoney.share.ShareManager;
-import com.zhuanfa.money.getmoney.user_defined_widget.RoundImageView;
+import com.zhuanfa.money.getmoney.widget.RoundImageView;
 
 import java.util.List;
 
@@ -38,6 +39,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private RelativeLayout remain_money_tv;
     private ImageView suggest_iv;
     private RoundImageView qq_head_img;
+    private Button get_money_20, get_money_50, get_money_100;
     private double total_money;
     private Intent intent;
 
@@ -75,8 +77,17 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         qq_head_img = (RoundImageView) view.findViewById(R.id.qq_head_img);
         remain_money_tv = (RelativeLayout) view.findViewById(R.id.remain_money_rl);
         suggest_iv = (ImageView) view.findViewById(R.id.suggest_iv);
+        get_money_20 = (Button) view.findViewById(R.id.get_money_20);
+        get_money_50 = (Button) view.findViewById(R.id.get_money_50);
+        get_money_100 = (Button) view.findViewById(R.id.get_money_100);
+
+
         remain_money_tv.setOnClickListener(this);
         suggest_iv.setOnClickListener(this);
+        get_money_20.setOnClickListener(this);
+        get_money_50.setOnClickListener(this);
+        get_money_100.setOnClickListener(this);
+
         qq_nickname.setText(shareManager.getNickname());
         netWorkImageViewVolley(shareManager.getHead_img(), qq_head_img);
     }
@@ -115,6 +126,16 @@ public class MineFragment extends Fragment implements View.OnClickListener {
             case R.id.suggest_iv:
                 intent = new Intent(getActivity(), SuggestActivity.class);
                 getActivity().startActivity(intent);
+                break;
+            case R.id.get_money_20:
+                Toast.makeText(getActivity(),"余额大于提现金额才能提现哦~",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.get_money_50:
+                Toast.makeText(getActivity(),"余额大于提现金额才能提现哦~",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.get_money_100:
+                Toast.makeText(getActivity(),"余额大于提现金额才能提现哦~",Toast.LENGTH_SHORT).show();
+                break;
         }
     }
 }

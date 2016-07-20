@@ -2,6 +2,7 @@ package com.zhuanfa.money.getmoney.fragment;
 
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
@@ -37,7 +38,9 @@ public class ForwardFragment extends Fragment {
     private PagerAdapter pagerAdapter = null;
     private List<NewsPageView> viewList = new ArrayList<NewsPageView>();
 
+    private static boolean hasShow = false;
     private View view;
+
 
     @Nullable
     @Override
@@ -45,6 +48,22 @@ public class ForwardFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_forward, null);
         findView();
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        checkVersion();
+    }
+
+    /**
+     * 检查版本跟新
+     */
+    private void checkVersion() {
+        if (!hasShow) {
+
+        }
+        hasShow = true;
     }
 
     private void findView() {
@@ -80,8 +99,7 @@ public class ForwardFragment extends Fragment {
             public void onPageSelected(int position) {
                 if (position == 11) {  //如果已经是最后一页,跳转到第一页
                     setTab(0);
-                }
-                else {
+                } else {
                     setTab(position);
                 }
             }

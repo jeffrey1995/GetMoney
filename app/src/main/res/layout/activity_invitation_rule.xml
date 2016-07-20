@@ -38,16 +38,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="@dimen/rule_left_right_padding"
-        android:layout_marginRight="@dimen/rule_left_right_padding"
         android:text="@string/invatation_rule_text"
         android:textSize="@dimen/rule_text_size" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/rule_top_padding"
-        android:layout_marginRight="@dimen/rule_top_padding"
         android:background="@drawable/invite_pic1080" />
 
 </LinearLayout>

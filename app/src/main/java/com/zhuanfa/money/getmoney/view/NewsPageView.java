@@ -180,7 +180,8 @@ public class NewsPageView {
     private void volley_Get(String type, final int isRefresh) {
         String url = activity.getString(R.string.url_host) + activity.getString(R.string.news) + type + "&r=" + isRefresh;
         Log.d(TAG, "url : " + url);
-        StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
                 //请求成功返回,开始解析数据

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.tencent.connect.share.QQShare;
 import com.tencent.tauth.IUiListener;
@@ -24,7 +25,7 @@ import java.util.ArrayList;
 /**
  * Created by tianxiying on 16/7/7.
  */
-public class InvitationFragment extends Fragment implements View.OnClickListener{
+public class InvitationFragment extends Fragment implements View.OnClickListener {
     private final String TAG = "InvitationFragment";
     private View view;
     private ImageView invitation_iv;
@@ -36,22 +37,24 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
     private static final int SHARE_QQ_FRIENDS = 0;
     private static final int SHARE_QQ_ZONE = 1;
     private ShareManager shareManager;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_invitation,null);
+        view = inflater.inflate(R.layout.fragment_invitation, null);
         shareManager = new ShareManager(this.getActivity());
         findView();
         listener = new IUiListener() {
             @Override
             public void onComplete(Object o) {
-                Log.d(TAG, o.toString());
-
+                Log.d(TAG, "onComplete!" + o.toString());
+                Toast.makeText(getActivity(), "转发成功!", Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onError(UiError uiError) {
-                Log.d(TAG, uiError.errorMessage);
+                Log.d(TAG, "onError!" + uiError.errorMessage);
+                Toast.makeText(getActivity(), "转发失败!", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -88,10 +91,16 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
         }
     }
 
-    @Override
+    /**
+     * 自已加了一个onActivityResult函数,将MainActivity的数据传入,方便操作
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (null != mTencent)
-            mTencent.onActivityResult(requestCode, resultCode, data);
+            Tencent.onActivityResultData(requestCode, resultCode, data, listener);
         super.onActivityResult(requestCode, resultCode, data);
     }
 
@@ -104,6 +113,7 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
 
     /**
      * 分享到qq
+     *
      * @param type SHARE_QQ_FRIENDS:分享到QQ好友.
      *             SHARE_QQ_ZONE:分享到QQ空间
      */
@@ -114,7 +124,6 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
         Bundle params = new Bundle();
         params.putInt(QQShare.SHARE_TO_QQ_KEY_TYPE, QQShare.SHARE_TO_QQ_TYPE_APP);  //设置分享类型,默认:图文
         params.putString(QQShare.SHARE_TO_QQ_TITLE, getString(R.string.share_title));   //设置分享标题
-        ArrayList<String> list = new ArrayList<String>();
 
         params.putString(QQShare.SHARE_TO_QQ_TARGET_URL, getString(R.string.app_logo)); //设置分享点击链接
         params.putString(QQShare.SHARE_TO_QQ_SUMMARY, "转发就可以赚钱,就在转发赚钱!"); //设置分享概要说明
@@ -123,8 +132,8 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
         if (type == SHARE_QQ_FRIENDS) {
             params.putString(QQShare.SHARE_TO_QQ_IMAGE_URL, getString(R.string.app_logo)); //设置分享图片
             mTencent.shareToQQ(this.getActivity(), params, listener);
-        }
-        else if (type == SHARE_QQ_ZONE) {
+        } else if (type == SHARE_QQ_ZONE) {
+            ArrayList<String> list = new ArrayList<String>();
             list.add(getString(R.string.app_logo));
             params.putStringArrayList(QQShare.SHARE_TO_QQ_IMAGE_URL, list); //设置分享图片
             mTencent.shareToQzone(this.getActivity(), params, listener);

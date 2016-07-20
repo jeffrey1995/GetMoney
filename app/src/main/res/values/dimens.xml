@@ -26,9 +26,9 @@
     <dimen name="invitation_margin">10dp</dimen>
 
     <!--Invitation_Rule-->
-    <dimen name="rule_top_padding">10dp</dimen>
-    <dimen name="rule_left_right_padding">10dp</dimen>
-    <dimen name="rule_text_size">18sp</dimen>
+    <dimen name="rule_top_padding">30dp</dimen>
+    <dimen name="rule_left_right_padding">20dp</dimen>
+    <dimen name="rule_text_size">17sp</dimen>
     <dimen name="ranking_title_size">25sp</dimen>
     <dimen name="ranking_list_padding">10dp</dimen>
 
@@ -39,18 +39,18 @@
     <dimen name="mine_head_img_size">60dp</dimen>
     <dimen name="mine_nickname_top_padding">10dp</dimen>
     <dimen name="mine_nickname_text_size">18sp</dimen>
-    <dimen name="invitation_friends_text_size">22sp</dimen>
+    <dimen name="invitation_friends_text_size">20sp</dimen>
     <dimen name="remain_money">25sp</dimen>
-    <dimen name="remain_money_right_margin">25sp</dimen>
+    <dimen name="remain_money_right_margin">50sp</dimen>
     <dimen name="get_money">25sp</dimen>
-    <dimen name="get_money_btn_width">220dp</dimen>
-    <dimen name="get_money_btn_height">70dp</dimen>
+    <dimen name="get_money_btn_width">176dp</dimen>
+    <dimen name="get_money_btn_height">56dp</dimen>
     <dimen name="get_money_top_padding">10sp</dimen>
-    <dimen name="get_money_explain_title">20sp</dimen>
-    <dimen name="get_money_explain_text">18sp</dimen>
+    <dimen name="get_money_explain_title">18sp</dimen>
+    <dimen name="get_money_explain_text">16sp</dimen>
 
     <!--Income_Details-->
-    <dimen name="income_text_size">25sp</dimen>
+    <dimen name="income_text_size">22sp</dimen>
     <dimen name="income_text_padding">10sp</dimen>
 
     <!--Income_Details_List_item-->
