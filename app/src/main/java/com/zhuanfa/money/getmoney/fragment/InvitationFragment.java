@@ -122,11 +122,11 @@ public class InvitationFragment extends Fragment implements View.OnClickListener
             initTencent();
         }
         Bundle params = new Bundle();
-        params.putInt(QQShare.SHARE_TO_QQ_KEY_TYPE, QQShare.SHARE_TO_QQ_TYPE_APP);  //设置分享类型,默认:图文
+        params.putInt(QQShare.SHARE_TO_QQ_KEY_TYPE, QQShare.SHARE_TO_QQ_TYPE_DEFAULT);  //设置分享类型,默认:图文
         params.putString(QQShare.SHARE_TO_QQ_TITLE, getString(R.string.share_title));   //设置分享标题
 
-        params.putString(QQShare.SHARE_TO_QQ_TARGET_URL, getString(R.string.app_logo)); //设置分享点击链接
-        params.putString(QQShare.SHARE_TO_QQ_SUMMARY, "转发就可以赚钱,就在转发赚钱!"); //设置分享概要说明
+        params.putString(QQShare.SHARE_TO_QQ_TARGET_URL, getString(R.string.share_link)); //设置分享点击链接
+        params.putString(QQShare.SHARE_TO_QQ_SUMMARY, "看新闻就可以赚钱,就在转发赚钱!"); //设置分享概要说明
         params.putString(QQShare.SHARE_TO_QQ_APP_NAME, "转发赚钱"); //设置分享来源
 
         if (type == SHARE_QQ_FRIENDS) {

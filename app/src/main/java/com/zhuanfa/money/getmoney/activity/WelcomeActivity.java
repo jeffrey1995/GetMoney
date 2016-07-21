@@ -3,6 +3,7 @@ package com.zhuanfa.money.getmoney.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.tencent.tauth.Tencent;
 import com.zhuanfa.money.getmoney.R;
@@ -17,16 +18,23 @@ public class WelcomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        shareManager = new ShareManager(this);
-        initTencent();
-        Intent intent;
-        if (mTencent.isSessionValid()) {
-            intent = new Intent(this, MainActivity.class);
-        } else {
-            intent = new Intent(this, LoginActivity.class);
-        }
-        startActivity(intent);
-        finish();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                shareManager = new ShareManager(WelcomeActivity.this);
+                initTencent();
+                Intent intent;
+                if (mTencent.isSessionValid()) {
+                    intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                } else {
+                    intent = new Intent(WelcomeActivity.this, LoginActivity.class);
+                }
+                startActivity(intent);
+                finish();
+            }
+        }, 1500);
     }
 
     /**

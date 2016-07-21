@@ -3,6 +3,7 @@
 
     <!--LoginActivity-->
     <string name="login_qq">QQ登录</string>
+    <string name="welcome_text">让转发更有价值</string>
 
     <!--MineFragment-->
     <string name="forward_title">转发任务</string>

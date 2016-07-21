@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -23,7 +24,7 @@ import java.util.HashMap;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener {
     private final String TAG = "LoginActivity";
-    private Button login_btn;
+    private RelativeLayout login_rl;
     private Tencent mTencent;
     private IUiListener iUiListener;
     private ShareManager shareManager;
@@ -86,8 +87,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     }
 
     private void findView() {
-        login_btn = (Button) findViewById(R.id.login_btn);
-        login_btn.setOnClickListener(this);
+        login_rl = (RelativeLayout) findViewById(R.id.login_rl);
+        login_rl.setOnClickListener(this);
     }
 
     private void showResult(String msg) {
@@ -112,7 +113,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.login_btn:
+            case R.id.login_rl:
                 //QQ登录
                 if (mTencent == null) {
                     initTencent();

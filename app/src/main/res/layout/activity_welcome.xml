@@ -5,9 +5,18 @@
     android:layout_height="match_parent"
     tools:context="com.zhuanfa.money.getmoney.activity.WelcomeActivity">
     <TextView
+        android:id="@+id/welcome_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textSize="25sp"
-        android:text="WelCome To Forward_Money!"/>
+        android:textColor="@color/theme"
+        android:text="@string/welcome_text"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/welcome_tv"
+        android:background="@mipmap/money"/>
 </RelativeLayout>

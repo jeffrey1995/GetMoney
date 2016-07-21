@@ -30,7 +30,7 @@ public class Income_DetailsActivity extends BaseActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income_details);
-        refreshMoney(); //计算数据
+        refreshMoney(); //计算余额数据
         findView();
     }
 

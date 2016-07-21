@@ -6,6 +6,21 @@ android {
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
 
+    signingConfigs {
+        debug {
+            storeFile file("moonlighting.jks")
+            storePassword "ch3cooh"
+            keyAlias "moonlighting"
+            keyPassword "ch3cooh"
+        }
+        relealse {
+            storeFile file("moonlighting.jks")
+            storePassword "ch3cooh"
+            keyAlias "moonlighting"
+            keyPassword "ch3cooh"
+        }
+    }
+
     defaultConfig {
         applicationId "com.zhuanfa.money.getmoney"
         minSdkVersion 15
@@ -14,11 +29,34 @@ android {
         versionName "v1.0"
     }
     buildTypes {
+        debug {
+            //签名
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.relealse
         }
     }
+//    productFlavors {
+//        //转发赚钱,多渠道打包
+//        zhuanfa_360 {
+//            manifestPlaceholders = [TD_CHANNEL_ID: "360zhuanfa", UMENG_CHANNEL_ID: "360zhuanfa", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.parttime.happytime", icon: "@mipmap/money"]
+//            applicationId "com.zhuanfa.money"
+//            versionCode 100
+//            versionName "1.0.0"
+//            resValue "string", "app_name", "转发赚钱"
+//        }
+//        zhuanfa_baidu {
+//            manifestPlaceholders = [TD_CHANNEL_ID: "baiduzhuanfa", UMENG_CHANNEL_ID: "baiduzhuanfa", GUIDE_VERSION_ID: "1.0.0", PACKAGE_NAME: "com.parttime.happytime", icon: "@mipmap/money"]
+//            applicationId "com.zhuanfa.money"
+//            versionCode 100
+//            versionName "1.0.0"
+//            resValue "string", "app_name", "转发赚钱"
+//        }
+//    }
 }
 
 dependencies {
