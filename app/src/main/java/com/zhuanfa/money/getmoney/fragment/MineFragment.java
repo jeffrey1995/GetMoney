@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,7 +40,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private RelativeLayout remain_money_tv;
     private ImageView suggest_iv;
     private RoundImageView qq_head_img;
-    private Button get_money_20, get_money_50, get_money_100;
+    private RelativeLayout get_money_20, get_money_50, get_money_100;
     private double total_money;
     private Intent intent;
 
@@ -77,9 +78,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         qq_head_img = (RoundImageView) view.findViewById(R.id.qq_head_img);
         remain_money_tv = (RelativeLayout) view.findViewById(R.id.remain_money_rl);
         suggest_iv = (ImageView) view.findViewById(R.id.suggest_iv);
-        get_money_20 = (Button) view.findViewById(R.id.get_money_20);
-        get_money_50 = (Button) view.findViewById(R.id.get_money_50);
-        get_money_100 = (Button) view.findViewById(R.id.get_money_100);
+        get_money_20 = (RelativeLayout) view.findViewById(R.id.get_money_20);
+        get_money_50 = (RelativeLayout) view.findViewById(R.id.get_money_50);
+        get_money_100 = (RelativeLayout) view.findViewById(R.id.get_money_100);
 
 
         remain_money_tv.setOnClickListener(this);

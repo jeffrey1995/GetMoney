@@ -5,7 +5,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.zhuanfa.money.getmoney.R;
@@ -72,7 +71,7 @@ public class ForwardDialog extends Dialog implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setContentView(R.layout.forward_dialog);
+        this.setContentView(R.layout.dialog_forward);
         findView();
     }
 }

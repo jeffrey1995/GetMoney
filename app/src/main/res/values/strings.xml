@@ -2,7 +2,7 @@
     <string name="app_name">转发赚钱</string>
 
     <!--LoginActivity-->
-    <string name="login_qq">QQ登录</string>
+    <string name="login_qq">使用QQ登录</string>
     <string name="welcome_text">让转发更有价值</string>
 
     <!--MineFragment-->
@@ -61,7 +61,7 @@
     <!--ForwardDialog-->
     <string name="forward_qzone">QQ空间</string>
     <string name="forward_qq">QQ</string>
-    <string name="forward_getmoney">分享后即可赚钱!</string>
+    <string name="forward_getmoney">转发给好友,每多一人阅读即可获得佣金!</string>
     <string name="forward_cancel">取消</string>
 
 

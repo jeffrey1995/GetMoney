@@ -42,7 +42,7 @@
     <dimen name="invitation_friends_text_size">20sp</dimen>
     <dimen name="remain_money">25sp</dimen>
     <dimen name="remain_money_right_margin">50sp</dimen>
-    <dimen name="get_money">25sp</dimen>
+    <dimen name="get_money">20sp</dimen>
     <dimen name="get_money_btn_width">176dp</dimen>
     <dimen name="get_money_btn_height">56dp</dimen>
     <dimen name="get_money_top_padding">10sp</dimen>

@@ -47,14 +47,14 @@
         jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/GetMoney/pullToRefreshlibrary/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a9c70d59eca89cfd35c24200b61207000e871a27">
+        sha1="f5c56b0113cde9da1dfb7c6907d5fc97675b6117">
         <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/GetMoney-pullToRefreshlibrary-unspecified_2a6ada47f282e4b7725ef1760b15a0fb9c5abc61.jar" />
     </item>
     <item
         jar="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/exploded-aar/GetMoney/pullToRefreshlibrary/unspecified/jars/libs/gif.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="133ab17dc02d51385c2262096d5a56706371eb09">
+        sha1="d56bfc030a913cbfd3f0584a177fc16e96405301">
         <dex dex="/Users/tianxiying/AndroidStudioProjects/GetMoney/app/build/intermediates/pre-dexed/debug/gif_4aadc4a993c8f23334a442bd546fc3f41185352e.jar" />
     </item>
     <item
