@@ -56,19 +56,6 @@
     <!--NewsFragment-->
     <string name="news_main_title">今日推荐美文</string>
     <string name="news_main_forward_money">转发能赚0.8元</string>
-    <string name="ranking_title">邀请排行榜</string>
-    <string name="ranking_list">\n
-        NO.1  广东  澎湃小伙tt   220人\n
-        NO.2  广东  source_X    147人\n
-        NO.3  湖北  ━━℡赱綉℡     130人\n
-        NO.4  福建  凉玍。不悲伤  	119人\n
-        NO.5  广东  RAINBOWOW  	102人\n
-        NO.6  安徽  莫问夜归人    90人\n
-        NO.7  北京  盎然芬芳      87人\n
-        NO.8  辽宁  阿智          81人\n
-        NO.9  广东  紅颜 Ⅲ叠”     77人\n
-        NO.10 河南  H、小白云      75人
-    </string>
 
     <!--ForwardDialog-->
     <string name="forward_qzone">QQ空间</string>
@@ -83,6 +70,12 @@
 
     <!--News_DetailsActvity-->
     <string name="forward_btn">转发赚钱</string>
+
+    <string name="toast_download_failure">下载失败，请检查您的网络</string>
+    <string name="dialog_button_update">点击升级</string>
+    <string name="dialog_button_confirm">确定</string>
+    <string name="dialog_title_tips">温馨提示</string>
+    <string name="dialog_content_uninstall">恭喜！您已经安装了新版本，请卸载清除旧版本。</string>
 
 
 </resources>

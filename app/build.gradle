@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24.0.0'
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
 
     defaultConfig {
         applicationId "com.zhuanfa.money.getmoney"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 22
         versionCode 1
         versionName "v1.0"
     }
@@ -27,4 +29,14 @@ dependencies {
     compile project(path: ':pullToRefreshlibrary')
     compile files('libs/open_sdk_r5509_lite.jar')
     compile files('libs/libammsdk.jar')
+    compile 'com.loopj.android:android-async-http:1.4.7'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile files('libs/TalkingDataAnalytics_V1.2.74.jar')
+}
+
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0].processResources.manifestFile
+        resourcePackageName android.defaultConfig.applicationId
+    }
 }

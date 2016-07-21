@@ -45,6 +45,10 @@
         <activity
             android:name=".activity.SuggestActivity"
             android:screenOrientation="portrait" />
+
+        <activity android:name=".dialog.UpdateDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/UpdateDialog"/>
         <!-- QQ互联的配置 -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -66,5 +70,14 @@
 
         <service android:name=".service.PushService" />
     </application>
+
+    <!--- Talking Data -->
+    <meta-data
+        android:name="TD_APP_ID"
+        android:value="8C9E35103D5CFBA20B5573002F00DE78" />
+
+    <meta-data
+        android:name="TD_CHANNEL_ID"
+        android:value="xiaomizhuanfa" />
 
 </manifest>

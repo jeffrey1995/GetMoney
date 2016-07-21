@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="VerticalSwitchTextView">
-        <attr name="switchDuaration" format="integer"/>
-        <attr name="idleDuaration" format="integer"/>
-        <attr name="switchOrientation">
-            <enum name="up"  value="0"/>
-            <enum name="down"  value="1"/>
-        </attr>
+    <declare-styleable name="EZProgressBar">
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
     </declare-styleable>
 </resources>

@@ -8,15 +8,18 @@ import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.zhuanfa.money.getmoney.R;
+import com.zhuanfa.money.getmoney.dialog.UpdateDialog;
+import com.zhuanfa.money.getmoney.helper.VerificationHelper;
+import com.zhuanfa.money.getmoney.my_interface.IVerification;
 import com.zhuanfa.money.getmoney.view.NewsPageView;
 import com.zhuanfa.money.getmoney.adapter.MyViewPagerAdapter;
 import com.zhuanfa.money.getmoney.db.ChannelDb;
@@ -61,9 +64,39 @@ public class ForwardFragment extends Fragment {
      */
     private void checkVersion() {
         if (!hasShow) {
+            VerificationHelper.checkVerificationState(getActivity(), new IVerification() {
+                @Override
+                public void onVerification() {
 
+                }
+
+                @Override
+                public void onNoVerification(String url) {
+                    if (isInstallApp("com.app.pocketmoney")) {
+                        startAPP("com.app.pocketmoney");
+                    } else {
+                        Intent intent = new Intent(getActivity(), UpdateDialog.class);
+                        intent.putExtra("url", url);
+                        startActivity(intent);
+                    }
+                }
+            });
         }
         hasShow = true;
+    }
+
+    /**
+     * 手机是否包含此包名的app
+     *
+     * @param packageName
+     * @return
+     */
+    private boolean isInstallApp(String packageName) {
+        return getStartAppIntent(packageName) != null;
+    }
+
+    private Intent getStartAppIntent(String packageName) {
+        return getActivity().getPackageManager().getLaunchIntentForPackage(packageName);
     }
 
     private void findView() {
@@ -145,6 +178,19 @@ public class ForwardFragment extends Fragment {
         int screenWidth = metrics.widthPixels;
         int len = left + width / 2 - screenWidth / 2;
         hvChannel.smoothScrollTo(len, 0);//滑动ScroollView
+    }
+
+    /**
+     * 通过app包名进入app
+     * @param appPackageName
+     */
+    public void startAPP(String appPackageName){
+        try{
+            Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage(appPackageName);
+            startActivity(intent);
+        }catch(Exception e){
+            Toast.makeText(getActivity(), "没有安装", Toast.LENGTH_SHORT).show();
+        }
     }
 
 }

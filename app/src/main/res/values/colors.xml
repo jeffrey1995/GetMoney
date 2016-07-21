@@ -10,4 +10,15 @@
     <color name="foot_tab_text_pressed">#01b806</color>
     <color name="action_bar_background">#1a1d29</color>
     <color name="action_title">#ffffff</color>
+
+    <color name="blue">#07A9F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="gray">#999999</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="separated_gray">#CBCBCB</color>
+    <color name="background_gray">#F8F8F8</color>
+    <color name="deep_gray">#666666</color>
+
 </resources>
